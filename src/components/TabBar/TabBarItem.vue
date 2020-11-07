@@ -1,17 +1,21 @@
 <!--  -->
 <template>
-	<div class="TabBarItem">
-		<slot></slot>
+	<div class="TabBarItem" @click='itemClick'>
+		<slot name='item-icon'></slot>
+		<slot name='item-text'></slot>
 	</div>
 </template>
 
 <script>
 export default {
-	data () {
-		return {
-
-		}
+	props: {
+		path: String,
 	},
+	methods: {
+		itemClick() {
+			this.$router.replace(this.path)
+		}
+	}
 
 }
 

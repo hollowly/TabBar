@@ -38,8 +38,9 @@ export default new Router({
 	mode:'history'
 })
 
-
+	
+// 解决连续点击当前路由而发生的报错
 const originalPush = Router.prototype.push
-   Router.prototype.push = function push(location) {
+Router.prototype.push = function push(location) {
    return originalPush.call(this, location).catch(err => err)
-	}
+}

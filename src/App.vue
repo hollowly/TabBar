@@ -1,8 +1,6 @@
 <template>
 <div id='#app'>
-	<tab-bar-main>
-		
-	</tab-bar-main>
+	<tab-bar-main></tab-bar-main>
 </div>
 </template>
 

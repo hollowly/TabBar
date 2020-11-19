@@ -1,5 +1,5 @@
 <template>
-<div id='#app'>
+<div id='app'>
 	<tab-bar-main></tab-bar-main>
 </div>
 </template>
